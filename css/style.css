@@ -72,6 +72,10 @@ body {
 /* Start Header */
 .header{
   padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 22555555;
+  background-color: var(--section-background);
 }
 .header .container{
   display: flex;
@@ -89,6 +93,7 @@ width: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .header .links .icon span{
 background-color: #333;
@@ -99,12 +104,9 @@ height: 3px;
 width: 100%;
 }
 .header .links .icon span:nth-child(2) {
-width: 60%;
+width: 100%;
 transition: var(--main-transition);
 }
-.header .links:hover .icon span:nth-child(2) {
- width: 100%;
-  }
 .header .links .icon span:last-child {
 width: 100%;
 }
@@ -129,7 +131,7 @@ width: 100%;
  right: 5px;
  top: -20px;
 }
-.header .links:hover ul{
+.header .links .active{
   display: block;
 }
 .header .links ul li a{
@@ -165,12 +167,13 @@ border-bottom: 1px solid #ddd;
  .landing .intro-text h1 {
   margin: 0;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 55px;
   color: var(--main-color);
 }
  .landing .intro-text p {
-  font-size: 19px;
+  font-size: 24px;
   line-height: 1.8;
+  color: #333;
  }
 /* End Landing section  */
 /* Start Features */
